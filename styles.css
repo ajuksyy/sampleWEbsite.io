@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(polp.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.navbar {
+    width: 95%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(207, 138, 138);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0; 
+    background: #ebad29;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: center;
+    top: 50%;
+    transform: translateY(-50);
+    text-align: center;
+    color: rgb(207, 138, 138) ;
+}
+
+.content h1{
+    font-size: 77px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: coral;
+}
+button{
+    width: 200px;
+    padding: 20px 0;
+    text-align: center;
+    margin: 25px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: solid #82621d;
+    background: transparent;
+    color: rgb(207, 138, 138);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background:  coral;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
